@@ -7,14 +7,23 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container form-control">
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white">
+                <h4 class="mb-0">Formulario de Registro</h4>
+            </div>
+            <div class="card-body">
 
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Guardar</button>
-        </form>
-        <a class="btn btn-warning" href="/">Cancelar</a>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                        <a class="btn btn-warning" href="/">Cancelar</a>
+                    </div>  
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
