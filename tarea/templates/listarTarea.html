@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    {%for tarea in tareas%}
     
+    {{tarea.titulo}}
+    {{tarea.descripcion}}
+    {{tarea.estado}}
+
+    {% endfor %}
 </body>
 </html>
