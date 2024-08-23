@@ -7,11 +7,12 @@
 </head>
 <body>
     {%for tarea in tareas%}
-    
+
     {{tarea.titulo}}
     {{tarea.descripcion}}
     {{tarea.estado}}
 
     {% endfor %}
+    <a href="crear">Crear Tarea</a>
 </body>
 </html>
